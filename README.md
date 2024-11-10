@@ -17,10 +17,8 @@ It can be setup in various ways:
 * Linux or WSL
 * Virtual Environment
 * Docker
-For fast setup I will go for: Virtual Environment, with sqlite and LocalExecutor 
-Note: This is not recommended for Production environment. For production use Docker and Postgresql with CeleryExecutor
-
-To setup Apache Airflow Please check:
+For fast setup I will go for: Docker
+To setup Apache Airflow Please check: https://github.com/cordon-thiago/airflow-spark/tree/master
 
 # B STEPS
 For steps and codes, check google colab notebook ALARAN_SENIOR_DATA_ENGINEER_ASSESMENT.ipynb OR https://colab.research.google.com/drive/1NVT4aKKjN3tox78GL8CW1PRp68h0jEYM
