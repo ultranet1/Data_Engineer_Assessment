@@ -23,13 +23,13 @@ Note: This is not recommended for Production environment. For production use Doc
 To setup Apache Airflow Please check:
 
 # B STEPS
-For steps and codes, check google colab notebook ALARAN_SENIOR_DATA_ENGINEER_ASSESMENT.ipynb
+For steps and codes, check google colab notebook ALARAN_SENIOR_DATA_ENGINEER_ASSESMENT.ipynb OR https://colab.research.google.com/drive/1NVT4aKKjN3tox78GL8CW1PRp68h0jEYM
 Note: Selenium is used for automatically scraping data from web ( https://doc.clickup.com/3627772/p/h/3epqw-172805/3c092c33c63dada )
 
 TASK A: (SQL QUERY FOR REVENUE GROWTH RATE)
 ## i. Install and import the necessary libraries (pyspark. selenium, polars & apscheduler)
 ## ii. Setup and configure Pyspark, airflow, and Selenium
-## iii. Use Selenium to automatically scrape data from clickup.com (Schema query, tables, columns and data)
+## iii. Use Selenium to automatically scrape data from clickup.com (Schema query, tables, columns and data)  https://doc.clickup.com/3627772/p/h/3epqw-172805/3c092c33c63dada
 ## iv. Extract and parse text from Schema query including table name, columns and data Type (with regex)
 ## v. Create Spark dataframe and populate with artificial data
 ## vi. Convert dataframe to Spark SQL table
@@ -39,5 +39,26 @@ TASK A: (SQL QUERY FOR REVENUE GROWTH RATE)
 ## viii. save result as RevenueGrowthRate(MOM).csv
 
 TASK B: PYSPARK OPERATIONS FOR DAILY UTILIZATION OF VEHICLE
-##i & ii install, 
+## i & ii install, import and setup libraries
+## iii. Use Selenium to automatically scrape tables, columns and data from  https://doc.clickup.com/3627772/p/h/3epqw-172805/3c092c33c63dada
+## iv. USe polars to automatically infer schema and convert to spark dataframe (Polars is a combination of Pyspark + Pandas)
+## v. Clean and Join tables
+       * Fill NULL with 0
+       * Trim and strip column names
+       * specify data types for each columns
+       * Rename columns
+       * Right join vehicle dataframe with history on vehicle_id column = vehicle_history
+       * left join vehicle_history with location dataframe on location_id = vehicle_location
+## vi. Define status list and filter based on status
+## vii. Calculate duration column from 'start' and 'end' column
+## viii. Group Vehicle status by Date, and vehicle id, then aggregate the sum for each date and vehicle 
+(convert result to 4 decimal places)
+## ix. Perform utilization calculation on the result based on status (convert result to 1 decimal place)
+## x. Save result as DailyUtilizationOfEachVehicle.csv
+Note: CSV is used bcos of easy readability, incase of big data, Apache Parquet is recommended.
+
+TASK C: SCHEDULING
+Its done in both Google colab and Apache Airflow
+* Google Colab: Using Apscheduler to run script function daily
+* For Apache Airflow: Please PAche airflow link above on how to create and schedule dag in airflow
 
