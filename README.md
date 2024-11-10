@@ -60,5 +60,5 @@ Note: CSV is used bcos of easy readability, incase of big data, Apache Parquet i
 TASK C: SCHEDULING
 Its done in both Google colab and Apache Airflow
 * Google Colab: Using Apscheduler to run script function daily
-* For Apache Airflow: Please PAche airflow link above on how to create and schedule dag in airflow
+* For Apache Airflow: Please check airflow link above on how to create and schedule dag in airflow
 
