@@ -15,8 +15,10 @@ To access the notebook, please check the file ALARAN_SENIOR_DATA_ENGINEER_ASSESM
 Its an open-source wokflow scheduler and orchestrator for batch-based etl pipelines. It provides proper monitoring and  scheduling with both UI and CLI.
 It can be setup in various ways:
 * Linux or WSL
+* Virtual Environment
 * Docker
-For fast setup we will go for:
+For fast setup I will go for: Virtual Environment, with sqlite and LocalExecutor 
+Note: This is not recommended for Production environment. For production use Docker and Postgresql with CeleryExecutor
 
 To setup Apache Airflow Please check:
 
