@@ -1,0 +1,2 @@
+created_date,vehicle_id,vehicle_name,license_plate_number,location_name,available_utilization_hours,idle_in_yard(hrs),on_rent(hrs),replacement(hrs),drive_car(hrs),cleaning(hrs),relocation(hrs),transit(hrs),panelshop(hrs),maintenance(hrs),pending(hrs),overdue(hrs),utilization(%),drive_car_utilization(%),ops_utilization(%),idle_utilization(%)
+2022-11-14,2,Ford Everest,1Q9243,Mandalay Airport,24.0008,10.4642,11.4997,0.0,0.0,0.0,0.0125,0.0,0.0,0.0,1.6981,0.3264,49,0,7,44
